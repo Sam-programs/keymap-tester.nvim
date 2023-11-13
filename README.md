@@ -19,13 +19,15 @@ local Test = require('keymap-tester')
 -- use \n for new lines
 Test('if(true)<C-space>','if(true){\n\n}','if statement check','c')
 Test('if(rue)<C-space>','if(true){\n\n}','should fail','c)
+
+vim.cmd('q!')
 ```
 ```
 	nvim -u NONE '+so init.lua' --headless
 ```
 you should get an output like
 ```
-c: should fail 
+c: should fail failed
 keys: "if(rue)<C-space>"
 expected:
 if(true){
