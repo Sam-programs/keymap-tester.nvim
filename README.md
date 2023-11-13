@@ -1,10 +1,10 @@
-a simple plugin that allows u to test keymaps with little overhead
-the plugin returns 1 function which takes 4 arguments
-1 keys to press
-2 expected output to add multiple lines use \n
-3 comment/error message
-4 filetype
-usage example with expand.nvim:
+a simple plugin that allows u to test keymaps
+the plugin returns 1 function which takes 4 arguments  
+1 keys to press  
+2 expected output to add multiple lines use \n  
+3 comment/error message  
+4 filetype  
+usage example with expand.nvim:  
 ```lua
 -- init.lua
 -- if u are using lazy
