@@ -9,6 +9,9 @@ lazypath .. 'keymap-tester.nvim' .. ',' ..
 lazypath .. 'expand.nvim' .. ','
 lazypath .. 'indent.nvim'
 
+require('expand').setup{}
+
+
 -- if u don't turn off indenting you'ill have to add the extra spaces to the tests
 vim.o.indentexpr = '0'
 

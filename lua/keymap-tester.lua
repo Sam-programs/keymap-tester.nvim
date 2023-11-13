@@ -1,5 +1,3 @@
-local functions = {}
-
 local function esc(str)
    return vim.api.nvim_replace_termcodes(str, true, false, true)
 end
@@ -49,8 +47,4 @@ local function Test(keys, expect, err, filetype)
    vim.cmd("%d")
 end
 
-return setmetatable({},{
-   __call = Test,
-   __index = functions,
-})
-
+return Test
